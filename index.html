@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning Poker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Planning Poker</h1>
+            <p>Select a card to estimate the story points</p>
+        </header>
+        
+        <section class="room-controls">
+            <div class="user-info">
+                <input type="text" id="username" placeholder="Enter your name">
+                <button id="join-btn">Join Session</button>
+            </div>
+            <div class="session-controls">
+                <button id="reset-btn">Reset Votes</button>
+                <button id="reveal-btn">Reveal Votes</button>
+            </div>
+        </section>
+
+        <section class="voting-area">
+            <div class="cards">
+                <div class="card" data-value="1">1</div>
+                <div class="card" data-value="2">2</div>
+                <div class="card" data-value="3">3</div>
+                <div class="card" data-value="5">5</div>
+                <div class="card" data-value="8">8</div>
+                <div class="card" data-value="13">13</div>
+                <div class="card" data-value="21">21</div>
+                <div class="card" data-value="?">?</div>
+                <div class="card coffee" data-value="coffee">☕</div>
+            </div>
+        </section>
+
+        <section class="results-area">
+            <h2>Voting Results</h2>
+            <div id="voters-list" class="voters-list">
+                <!-- Voters will be displayed here -->
+            </div>
+            <div id="results-summary" class="results-summary">
+                <!-- Summary will be displayed here when revealed -->
+            </div>
+        </section>
+
+        <footer>
+            <p>Planning Poker App © 2025</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
